@@ -25,6 +25,13 @@
 
 { "slackUsername": String, "backend": Boolean, "age": Integer, "bio": String }
 
+## API Endpoint URL
+
+`
+[API Endpoint URL - ](https://backend-task-one.onrender.com/getdata)
+
+`
+
 ## Author
 
 - [Olabode Olaniyi](https://github.com/Nierowheezy)
