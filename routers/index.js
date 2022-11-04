@@ -1,11 +1,11 @@
 const { Router } = require("express");
-// const expenseRouter = require("./expenseRoutes");
 const trackOneRouter = require("./trackOneRoutes");
-// const userRouter = require("./userRoutes");
+const trackTwoRoutes = require("./trackTwoRoutes");
 const router = Router();
 
 // router.use("/user", userRouter);
 // router.use("/expense", expenseRouter);
-router.use("/getdata", trackOneRouter);
+router.use("/api/v1/getdata", trackOneRouter);
+router.use("/api/v1/calculate", trackTwoRoutes);
 
 module.exports = router;
