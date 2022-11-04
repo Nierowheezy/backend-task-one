@@ -20,6 +20,7 @@ module.exports.calculate = async (req, res) => {
       let result = performOperation(operation_type, x, y);
       console.log(result);
       const response = {
+        slackUsername: slackUsername,
         result: result.results,
         operation_type: result.operation_type,
       };
