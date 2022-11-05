@@ -1,8 +1,8 @@
 const { Router } = require("express");
 const { getData } = require("../controllers/trackOneController");
 
-const authRouter = Router();
+const router = Router();
 
-authRouter.get("/", getData);
+router.get("/", getData);
 
-module.exports = authRouter;
+module.exports = router;
