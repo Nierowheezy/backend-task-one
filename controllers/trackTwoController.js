@@ -22,8 +22,8 @@ module.exports.calculate = async (req, res) => {
 
       res.status(200).json({
         slackUsername: "Niero",
-        result: result.results,
         operation_type: result.operation_type,
+        result: result.results,
       });
     }
   } catch (err) {
