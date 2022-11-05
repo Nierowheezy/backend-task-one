@@ -2,7 +2,7 @@ const performOperation = require("../utils/performOperation");
 
 module.exports.calculate = async (req, res) => {
   try {
-    const slackUsername = "Niero";
+    // const slackUsername = "Niero";
 
     // console.log(req.body);
     const operation_type = req.body.operation_type;
@@ -19,12 +19,12 @@ module.exports.calculate = async (req, res) => {
       console.log(true);
       let result = performOperation(operation_type, x, y);
       console.log(result);
-      const response = {
-        slackUsername: slackUsername,
+
+      res.status(200).json({
+        slackUsername: "Niero",
         result: result.results,
         operation_type: result.operation_type,
-      };
-      res.status(200).json(response);
+      });
     }
   } catch (err) {
     res.status(404).json({ errors: { msg: "Something went wrong." } });
